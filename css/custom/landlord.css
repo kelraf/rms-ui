@@ -1,24 +1,38 @@
+.main-cont {
+    /* height: 100vh; */
+}
+
 .profile-image {
-    background: red;
+    background: rgb(216, 197, 197);
     height: 300px;
 }
 
+.right-top {
+    background: rgb(15, 15, 167);
+    height: 200px;
+    color: white;
+}
+
 .btn-tabs-box {
-    background: green;
+    background: rgb(15, 15, 167);
+    color: white !important;
 }
 
 .btn-tabs-box a {
-    margin-top: 10px !important;
-    margin-bottom: 10px !important;
+    margin-top: 5px !important;
+    margin-bottom: 5px !important;
 }
 
 .dash-content {
     background: brown;
+    min-height: inherit;
+    position: relative;
+    max-height: auto;
 }
 
 .tab-content-custom {
     background: gray;
-    height: 100%;
+    min-height: 500px;
     position: relative;
-    top: -80px;
+    top: -200px;
 }
