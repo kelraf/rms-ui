@@ -25,14 +25,15 @@
 
 .dash-content {
     background: brown;
-    min-height: inherit;
-    position: relative;
-    max-height: auto;
+    /* min-height: inherit; */
+    /* position: relative; */
+    /* max-height: auto !important; */
+
 }
 
 .tab-content-custom {
-    background: gray;
-    min-height: 500px;
+    background: rgb(128, 128, 128);
+    min-height: 300px;
     position: relative;
     top: -200px;
 }
