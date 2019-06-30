@@ -2,38 +2,44 @@
     /* height: 100vh; */
 }
 
-.profile-image {
-    background: rgb(216, 197, 197);
-    height: 300px;
-}
-
 .right-top {
-    background: rgb(15, 15, 167);
-    height: 200px;
+    background: rgb(21, 21, 128);
+    height: auto;
     color: white;
 }
 
+.profile-image-col {
+    height: auto;
+}
+
+.image-cont {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    margin: auto;
+}
+
 .btn-tabs-box {
-    background: rgb(15, 15, 167);
-    color: white !important;
+    background: rgb(21, 21, 128);
+    position: relative;
 }
 
 .btn-tabs-box a {
     margin-top: 5px !important;
     margin-bottom: 5px !important;
+    color: white !important;
 }
 
 .dash-content {
-    background: brown;
-    /* min-height: inherit; */
-    /* position: relative; */
-    /* max-height: auto !important; */
-
+    background: rgb(165, 42, 42);
+    position: relative;
+    /* top: -200px !important; */
+    /* height: 200px !important; */
 }
 
 .tab-content-custom {
-    background: rgb(128, 128, 128);
-    min-height: 300px;
-    position: relative;
-    top: -200px;
+    background: rgba(128, 128, 128, 0.507);
+    min-height: 200px;
+    overflow: hidden;
 }
