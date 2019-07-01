@@ -1,0 +1,46 @@
+body {
+    color: white;
+}
+
+.main-cont {
+    margin-top: 100px;
+    border: 1px solid white;
+}
+
+.edit-btn {
+    /* background-color: red; */
+    width: 50%;
+    margin: auto
+}
+
+.edit-btn button {
+    width: 100%;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 0;
+    color: white;
+    /* margin: auto; */
+}
+
+.house-image {
+    width: 100%;
+    background: red;
+    height: 200px;
+    border: 1px solid white;
+    background: inherit;
+    text-align: center;
+}
+
+.house-icon {
+    /* background: gray; */
+    width: 50%;
+    text-align: center;
+    position: relative;
+    bottom: -77px;
+    border: 1px solid white;
+    margin: auto;
+}
+
+.house-icon i {
+    /* border: 1px solid white; */
+}
