@@ -1,0 +1,63 @@
+body {
+    color: white;
+}
+
+.image-cont {
+    height: 200px;
+    width: 200px;
+    margin: auto;
+    /* background-color: red; */
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid white;
+}
+
+.edit-btn {
+    /* background-color: red; */
+    width: 50%;
+    margin: auto
+}
+
+.edit-btn button {
+    width: 100%;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 0;
+    color: white;
+    /* margin: auto; */
+}
+
+.bb {
+    border-bottom: 1px solid white;
+}
+
+.icon {
+    /* height: 30px; */
+    padding-top: 5px;
+    padding-bottom: 5px;
+    /* background: red; */
+}
+
+.items {
+    /* background: red !important; */
+    margin: 1px;
+    border: 1px solid white;
+}
+
+.icon i {
+    /* font-size: 20%; */
+}
+
+.name {
+    /* height: 30px; */
+    padding-top: 5px;
+    padding-bottom: 5px;
+    /* background: green; */
+}
+
+.number {
+    /* height: 30px; */
+    padding-top: 5px;
+    padding-bottom: 5px;
+    /* background: gray; */
+}
