@@ -43,3 +43,39 @@ body {
     min-height: 200px;
     overflow: hidden;
 }
+
+
+.content-cols {
+    /* background-color: red; */
+    height: auto;
+    text-align: center;
+}
+
+.content-hold {
+    width: 90%;
+    cursor: pointer;
+    margin: auto;
+    border: 1px solid white;
+}
+
+.icon {
+    /* color: blue !important; */
+    position: relative;
+}
+
+.with-pple {
+    color: gray;
+    position: absolute;
+    font-size: 30px;
+    right: 35%;
+    top: 55%;
+}
+
+.text-danger {
+    color: red;
+}
+
+.chart-box {
+    height: 200px;
+    background-color: red;
+}
