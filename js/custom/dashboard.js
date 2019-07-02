@@ -58,7 +58,6 @@ function chart(chartData) {
                 }
         })
 
-        // alert("Success");
     } else {
         alert("Could Not Access Chart One Canvas");
     }
