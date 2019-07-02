@@ -14,7 +14,7 @@ body {
     margin: auto;
 }
 
-.btn-cont button {
+.btn-cont a {
     background: transparent;
     border: 1px solid white;
     width: 50%;
