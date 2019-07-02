@@ -73,9 +73,11 @@ body {
 
 .text-danger {
     color: red;
+    color: rgb(68, 67, 67);
 }
 
 .chart-box {
-    height: 200px;
-    background-color: red;
+    /* height: 200px; */
+    /* background-color: red; */
+    border: 1px solid white;
 }

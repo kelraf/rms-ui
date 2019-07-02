@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="../css/custom/dashboard.css">
 </head>
 
-<body class="bg-primary">
+<body class="bg-primary" onload="dashboard();">
     <div class="container-fluid main-cont">
 
         <div class="row">
@@ -177,7 +177,9 @@
                                      <!-- Chart -->
                                      <div class="row">
                                          <div class="col-12">
-                                             <div class="chart-box"></div>
+                                             <div class="chart-box pt-2 pb-2">
+                                                 <canvas id="chart-one"></canvas>
+                                             </div>
                                          </div>
                                      </div>
 
@@ -189,18 +191,22 @@
                                      <!-- Chart Header -->
                                      <div class="row">
                                          <div class="col-12 p-0">
-                                             <p class="lead">Occupied Vs Unoccupied</p>
+                                             <p class="lead">Payed Vs Not Payed</p>
                                          </div>
                                      </div>
 
                                      <!-- Chart -->
                                      <div class="row">
                                          <div class="col-12">
-                                             <div class="chart-box"></div>
+                                             <div class="chart-box pt-2 pb-2">
+                                                 <canvas id="chart-two"></canvas>
+                                             </div>
                                          </div>
                                      </div>
                                 </div>
                             </div>
+
+
                         </div>
 
                     </div>
@@ -214,17 +220,129 @@
                         </div>
                     </div>
                     
-                    <div class="tab-pane fade tab-content-custom bg-primary p-1" id="v-pills-houses" role="tabpanel"
-                        aria-labelledby="v-pills-houses-tab">Houses</div>
+                    <div class="tab-pane fade tab-content-custom bg-primary p-1" id="v-pills-houses" role="tabpanel" aria-labelledby="v-pills-houses-tab">
+            
+                        <div class="container-fluid">
 
-                    <div class="tab-pane fade tab-content-custom bg-primary p-1" id="v-pills-tenants" role="tabpanel"
-                        aria-labelledby="v-pills-tenants-tab">Tenants</div>
+                            <!-- Header -->
+                            <div class="row">
+                                <div class="col-4 p-0">
+                                    <p class="lead">Houses</p>
+                                </div>
+                                <div class="col-4">Add+</div>
+                                <div class="col-4">
+                                    <div class="row">
+                                        <div class="col-6">Total Houses</div>
+                                        <div class="col-6">677</div>
+                                    </div>
+                                </div>
+                            </div>
 
-                    <div class="tab-pane fade tab-content-custom bg-primary p-1" id="v-pills-payments" role="tabpanel"
-                        aria-labelledby="v-pills-payments-tab">Payments</div>
+                            <!-- Items -->
+                            <div class="row">
 
-                    <div class="tab-pane fade tab-content-custom bg-primary p-1" id="v-pills-outs-payments" role="tabpanel"
-                        aria-labelledby="v-pills-outs-payments-tab">Outstanding Payments</div>
+                                <div class="col-3 p-0 content-cols">
+                                     <div class="content-hold p-1">
+                                         <div class="icon">
+                                             <i class="fa fa-home pt-1 pb-1 fa-4x"></i>
+                                             <i class="fa fa-users pt-1 pb-1 fa-5x with-pple"></i>
+                                         </div>
+                                         <div class="name">Occupied Houses</div>
+                                         <div class="number">30</div>
+                                     </div>
+                                </div>
+
+                                <div class="col-3 p-0 content-cols">
+                                    <div class="content-hold p-1">
+                                        <div class="icon">
+                                            <i class="fa fa-home pt-1 pb-1 fa-4x"></i>
+                                            <i class="fa fa-users pt-1 pb-1 fa-5x with-pple text-danger"></i>
+                                        </div>
+                                        <div class="name">Unoccupied Houses</div>
+                                        <div class="number">30</div>
+                                    </div>
+                                </div>
+
+                                <div class="col-3 p-0 content-cols">
+                                    <div class="content-hold p-1">
+                                        <div class="icon">
+                                            <i class="fa fa-money pt-1 pb-1 fa-4x"></i>
+                                        </div>
+                                        <div class="name">Payed</div>
+                                        <div class="number">Kshs 100000</div>
+                                    </div>
+                                </div>
+
+                                <div class="col-3 p-0 content-cols">
+                                     <div class="content-hold p-1">
+                                         <div class="icon">
+                                             <i class="fa fa-money pt-1 pb-1 fa-4x"></i>
+                                             <i class="fa fa-times text-danger pt-1 pb-1 fa-5x with-pple"></i>
+                                         </div>
+                                         <div class="name">Not Payed</div>
+                                         <div class="number">Kshs 100000</div>
+                                     </div>
+                                </div>
+
+                            </div>
+
+                            <!-- Charts -->
+                            <div class="row pt-3">
+
+                                <!-- Houses Occupied vs UnOccupied Chart -->
+                                <div class="col-6">
+
+                                    <!-- Chart Header -->
+                                    <div class="row">
+                                        <div class="col-12 p-0">
+                                            <p class="lead">Occupied Vs Unoccupied</p>
+                                        </div>
+                                    </div>
+
+                                    <!-- Chart -->
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="chart-box"></div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <!-- Payment Vs Not Payed Chart -->
+                                <div class="col-6">
+
+                                    <!-- Chart Header -->
+                                    <div class="row">
+                                        <div class="col-12 p-0">
+                                            <p class="lead">Payed Vs Not Payed</p>
+                                        </div>
+                                    </div>
+
+                                    <!-- Chart -->
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="chart-box pt-2 pb-2">
+                                                <canvas class="chart-two"></canvas>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade tab-content-custom bg-primary p-1" id="v-pills-tenants" role="tabpanel" aria-labelledby="v-pills-tenants-tab">
+                        <p class="lead">Tenants</p>
+                    </div>
+
+                    <div class="tab-pane fade tab-content-custom bg-primary p-1" id="v-pills-payments" role="tabpanel" aria-labelledby="v-pills-payments-tab">
+                        <p class="lead">Payments</p>
+                    </div>
+
+                    <div class="tab-pane fade tab-content-custom bg-primary p-1" id="v-pills-outs-payments" role="tabpanel" aria-labelledby="v-pills-outs-payments-tab">
+                        <p class="lead">Outstanding Payments</p>
+                    </div>
 
                 </div>
 
@@ -235,11 +353,11 @@
 
 
     <script src="../js/custom/custom-libraries/jquery.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
     <!-- <script src="../js/custom/custom-libraries/popper.js"></script> -->
 
     <script src="../js/bootstrap.min.js"></script>
-    <script src="../js/custom/landlord.js"></script>
+    <script src="../js/custom/dashboard.js"></script>
     
 </body>
 </html>
