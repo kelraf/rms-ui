@@ -16,11 +16,27 @@ body {
 }
 
 .image-cont {
-    width: 50px;
-    height: 50px;
+    width: 50px !important;
+    height: 50px !important;
     background-color: white;
     border-radius: 50%;
     margin: auto;
+
+}
+
+/* .notification {
+
+} */
+
+.notification-content {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background: red;
+    top: 3px;
+    color: white;
+    right: 28px;
+    border-radius: 50%;
 }
 
 .btn-tabs-box {

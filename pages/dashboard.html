@@ -29,11 +29,16 @@
                             <div class="col-md-2 col-6">
                                 <div class="row">
                                     <div class="col-md-6 p-0 col-6 profile-image-col">
-                                        <div class="image-cont">
-
+                                        <a href="./user_profile.html" class="image-link">
+                                            <div class="image-cont"></div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-6 col-6 g-danger">
+                                        <div class="notification pt-2 text-center">
+                                            <i class="fa fa-bell fa-2x"></i>
+                                            <p class="lead notification-content">2</p>
                                         </div>
                                     </div>
-                                    <div class="col-md-6 col-6 bg-danger">e</div>
                                 </div>
                             </div>
                         </div>
@@ -49,27 +54,34 @@
                 <div class="nav flex-column nav-pills btn-tabs-box" id="v-pills-tab" role="tablist" aria-orientation="vertical">
 
                     <a class="nav-link active" id="v-pills-dashboard-tab" data-toggle="pill" href="#v-pills-dashboard" role="tab" aria-controls="v-pills-dashboard" aria-selected="true">
-                        <i class="fa fa-dashboard pr-1"></i> <span>Dashboard</span>
+                        <i class="fa fa-dashboard pr-1 fa-2x"></i> <span>Dashboard</span>
                     </a>
 
                     <a class="nav-link" id="v-pills-apartments-tab" data-toggle="pill" href="#v-pills-apartments" role="tab" aria-controls="v-pills-apartments" aria-selected="false">
-                        <i class="fa fa-building pr-1"></i> <span>Apartments</span>
+                        <i class="fa fa-building pr-1 fa-2x"></i> <span>Apartments</span>
                     </a>
 
                     <a class="nav-link" id="v-pills-houses-tab" data-toggle="pill" href="#v-pills-houses" role="tab" aria-controls="v-pills-houses" aria-selected="false">
-                        <i class="fa fa-home pr-1"></i> <span>Houses</span>
+                        <i class="fa fa-home pr-1 fa-2x"></i> <span>Houses</span>
                     </a>
 
                     <a class="nav-link" id="v-pills-tenants-tab" data-toggle="pill" href="#v-pills-tenants" role="tab" aria-controls="v-pills-tenants" aria-selected="false">
-                        <i class="fa fa-users pr-1"></i> <span>Tenants</spa>
+                        <i class="fa fa-users pr-1 fa-2x"></i> <span>Tenants</spa>
                     </a>
 
                     <a class="nav-link" id="v-pills-payments-tab" data-toggle="pill" href="#v-pills-payments" role="tab" aria-controls="v-pills-payments" aria-selected="false">
-                        <i class="fa fa-money pr-1"></i> <span>Payments</span>
+                        <i class="fa fa-money fa-2x pr-1"></i> <span>Payments</span>
                     </a>
 
                     <a class="nav-link" id="v-pills-outs-payments-tab" data-toggle="pill" href="#v-pills-outs-payments" role="tab" aria-controls="v-pills-outs-payments" aria-selected="false">
-                        <i class="fa fa-money pr-1"> </i><span>Outstanding Payments</spa>
+                        <i class="fa fa-money fa-2x pr-1"> </i><span>Outstanding Payments</spa>
+                    </a>
+
+                    <a class="nav-link" id="v-pills-outs-payments-tab"  href="./user_profile.html" role="tab" aria-controls="v-pills-outs-payments" >
+                        <i class="fa fa-user fa-2x pr-1"> </i><span>My Profile</spa>
+                    </a>
+                    <a class="nav-link" id="v-pills-outs-payments-tab" href="../" role="tab" aria-controls="v-pills-outs-payments" aria-selected="false">
+                        <i class="fa fa-sign-out pr-1 fa-2x"> </i><span>Logout</spa>
                     </a>
                 </div>
 
@@ -229,7 +241,9 @@
                                 <div class="col-4 p-0">
                                     <p class="lead">Houses</p>
                                 </div>
-                                <div class="col-4">Add+</div>
+                                <div class="col-4">
+                                    <a href="./house_form.html" style="text-decoration: none; color: white">Add House</a>
+                                </div>
                                 <div class="col-4">
                                     <div class="row">
                                         <div class="col-6">Total Houses</div>
@@ -352,9 +366,12 @@
     </div>
 
 
+    
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
     <script src="../js/custom/custom-libraries/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
-    <!-- <script src="../js/custom/custom-libraries/popper.js"></script> -->
+    <script src="../js/custom/custom-libraries/popper.js"></script>
+    <script src="../js/custom/custom-libraries/chart.js"></script>
 
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/custom/dashboard.js"></script>

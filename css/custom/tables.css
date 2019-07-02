@@ -1,0 +1,27 @@
+body {
+    /* background: white !important; */
+}
+
+#users {
+    /* background: transparent !important;
+    color: white !important; */
+}
+
+.table-body {
+    /* /* background: red; */
+    /* color: rgb(255, 255, 255) !important; */ 
+}
+
+#table-btn {
+    /* width: 100% !important;
+    height: 100% !important; */
+}
+
+#table-row {
+    /* color: white; */
+}
+
+#table-row:hover {
+    /* background: rgb(126, 126, 126) !important; */
+    /* cursor: pointer; */
+} 

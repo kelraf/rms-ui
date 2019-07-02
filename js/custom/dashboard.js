@@ -40,8 +40,8 @@ function chart(chartData) {
                         label: chartData.chartLabel,
                         data: [chartData["data"]["firstData"], chartData["data"]["secondData"]],
                         backgroundColor: [
-                            'rgb(68, 67, 67)',
-                            'rgb(253, 253, 253)',
+                            'rgb(255, 255, 255)',
+                            'rgb(255, 0, 0)',
                         ]
                        
                     }]
@@ -58,7 +58,6 @@ function chart(chartData) {
                 }
         })
 
-        // alert("Success");
     } else {
         alert("Could Not Access Chart One Canvas");
     }
