@@ -11,10 +11,10 @@
     <!-- <link rel="stylesheet" href="../css/bootstrap.css"> -->
     <link rel="stylesheet" href="../css/custom/house_profile.css">
 </head>
-<body class="bg-primary">
+<body class="bg-primary" onload="apartmentsProfile();">
 
     <!-- Back Button -->
-    <a href="#" class="back-arrow-btn">
+    <a href="./apartments.html" class="back-arrow-btn">
         <i class="fa fa-arrow-left fa-2x"></i>
     </a>
 
@@ -46,10 +46,29 @@
                 <div class="row pt-2 pb-2">
                     <div class="col-12  p-0">
                         <div class="edit-btn">
+                            <button class="btn">Add House</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Edit User Details row -->
+                <div class="row pt-2 pb-2">
+                    <div class="col-12  p-0">
+                        <div class="edit-btn">
                             <button class="btn">Edit</button>
                         </div>
                     </div>
                 </div>
+
+                <!-- Edit User Details row -->
+                <div class="row pt-2 pb-2">
+                    <div class="col-12  p-0">
+                        <div class="edit-btn">
+                            <button class="btn">Delete</button>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
             <!-- House Icon and images -->
@@ -61,7 +80,7 @@
                     <div class="row">
                         <div class="col-md-12 p-0">
                             <div class="house-image">
-                                Apartment Image
+                                <canvas id="apartments"></canvas>
                             </div>
                         </div>
                     </div>
@@ -76,7 +95,7 @@
 
                                  <!-- Edit User Details row -->
                                  <div class="edit-btn">
-                                     <button class="btn">Houses</button>
+                                     <a href="./houses.html" class="btn">Houses</a>
                                  </div>
                             </div>
 
@@ -131,5 +150,17 @@
             </div>
         </div>
     </div>
+
+
+
+
+
+    <script src="../js/custom/custom-libraries/jquery.js"></script>
+    <script src="../js/custom/custom-libraries/datatables.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+    <script src="../js/custom/custom-libraries/popper.js"></script>
+    <script src="../js/custom/custom-libraries/chart.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/custom/apartment-profile.js"></script>
 </body>
 </html>
