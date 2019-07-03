@@ -68,10 +68,17 @@ body {
 }
 
 .content-hold {
-    width: 90%;
+    width: 90% !important;
     cursor: pointer;
     margin: auto;
     border: 1px solid white;
+    display: inline-block;
+    color: white;
+    transition-duration: 0.5s;
+}
+
+.content-hold:hover {
+    text-decoration: none !important;
 }
 
 .icon {
