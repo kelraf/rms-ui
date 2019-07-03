@@ -21,6 +21,7 @@ body {
     background-color: white;
     border-radius: 50%;
     margin: auto;
+    overflow: hidden;
 
 }
 
@@ -103,4 +104,16 @@ body {
     /* height: 200px; */
     /* background-color: red; */
     border: 1px solid white;
+}
+
+.btn-custom {
+    width: 100% !important;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 0;
+    color: white;
+}
+
+.to-house-form {
+    background: red !important;
 }
