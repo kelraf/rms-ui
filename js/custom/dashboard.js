@@ -87,6 +87,9 @@ data.data.firstData = 200;
 data.data.secondData = 1000
 chart(data);
 
+
+data.elementId = "chart-three";
+chart(data);
 }
 
 // console.log(document.onload)
