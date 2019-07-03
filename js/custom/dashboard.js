@@ -90,6 +90,18 @@ chart(data);
 
 data.elementId = "chart-three";
 chart(data);
+
+data.elementId = "chart-four";
+chart(data);
+
+data.elementId = "chart-five";
+chart(data);
+
+data.elementId = "chart-six";
+chart(data);
+
+data.elementId = "chart-seven";
+chart(data);
 }
 
 // console.log(document.onload)
