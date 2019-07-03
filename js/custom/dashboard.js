@@ -102,6 +102,14 @@ chart(data);
 
 data.elementId = "chart-seven";
 chart(data);
+
+
+
+
+
+// Apartment Profile
+data.elementId = "apartments";
+chart(data);
 }
 
 // console.log(document.onload)
