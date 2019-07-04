@@ -2,6 +2,15 @@ body {
     color: white;
 }
 
+.active {
+     border-bottom: 1px solid white;
+}
+
+.active-custom {
+    /* border-bottom: 1px solid white;
+    background: red; */
+}
+
 .main-cont {
     /* height: 100vh; */
 }
@@ -116,4 +125,13 @@ body {
 
 .to-house-form {
     background: red !important;
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+    .rms {
+        font-size: 13px !important;
+    }
 }

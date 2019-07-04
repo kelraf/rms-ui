@@ -63,6 +63,65 @@ function chart(chartData) {
     }
 }
 
+// Dashboard Tab
+let dashboardTab = document.getElementById("dashboard");
+dashboardTab.onclick = function() {
+
+    let element = document.querySelector(".active-custom");
+    element.classList.remove("active-custom");
+    this.classList.add("active-custom")    
+
+}
+
+// apartments
+let apartments = document.getElementById("apartments");
+apartments.onclick = function() {
+    // alert("Success");
+
+    let element = document.querySelector(".active-custom");
+    element.classList.remove("active-custom");
+
+    this.classList.add("active-custom");
+
+}
+
+// houses
+let houses = document.getElementById("houses");
+houses.onclick = function() {
+
+    let element = document.querySelector(".active-custom");
+    element.classList.remove("active-custom");
+    this.classList.add("active-custom");
+
+}
+
+
+// tenants 
+let tenants = document.getElementById("tenants");
+tenants.onclick = function() {
+
+    let element = document.querySelector(".active-custom");
+    element.classList.remove("active-custom");
+
+    this.classList.add("active-custom");
+
+}
+
+
+// payment
+let payment = document.getElementById("payment");
+payment.onclick = function() {
+
+    let element = document.querySelector(".active-custom");
+    element.classList.remove("active-custom");
+
+    this.classList.add("active-custom");
+
+}
+
+
+
+// Create Data Object for Chart
 let data = {
     chartData: "Occupied Vs Unoccupied",
     elementId: "chart-one",
@@ -77,16 +136,18 @@ let data = {
     }
 }
 
+// Create Chart For Dashboard On Load of the Page
+// Chart One
 chart(data);
 
 
+// Edit The Data Object Then Call The Method To Create chart Two
 data.elementId = "chart-two";
 data.labels.labelOne = "Payed";
 data.labels.labelTwo = "Not Payed";
 data.data.firstData = 200;
 data.data.secondData = 1000
 chart(data);
-
 
 data.elementId = "chart-three";
 chart(data);
@@ -103,13 +164,11 @@ chart(data);
 data.elementId = "chart-seven";
 chart(data);
 
-
-
-
-
 // Apartment Profile
 data.elementId = "apartments";
 chart(data);
+
+
 }
 
 // console.log(document.onload)
