@@ -1,5 +1,7 @@
 body {
     color: white;
+    transition-property: all;
+    transition-duration: .4s;
 }
 
 .active {
@@ -12,7 +14,6 @@ body {
 }
 
 .main-cont {
-    /* height: 100vh; */
 }
 
 .right-top {
