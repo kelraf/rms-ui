@@ -171,4 +171,13 @@ chart(data);
 
 }
 
-// console.log(document.onload)
+
+$(document).ready(function() {
+    // Mobile Responsive Nav
+    let lines_box = document.getElementById("lines-box");
+    lines_box.onclick = function () {
+        let menu = $("menu");
+        menu.style.display = "block";
+        // alert("Success");
+    }
+});

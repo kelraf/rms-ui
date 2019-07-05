@@ -136,3 +136,48 @@ body {
         font-size: 13px !important;
     }
 }
+
+
+
+
+@media only screen and (max-width: 575px) {
+
+    #top-div {
+        display: none;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .lines-box {
+        width: 60px;
+        height: 50px;
+        float: right;
+        z-index: 1;
+        /* cursor: pointer; */
+        /* border: 1px solid white; */
+    }
+    
+    .lines-box:hover {
+        cursor: pointer;
+    }
+
+    .line {
+        margin: 0;
+        height: 1px;
+        background: white !important;
+    }
+
+    #line-one {
+        margin-top: 4px;
+    }
+
+    #line-two {
+        margin-top: 15px;
+    }
+
+    #line-three {
+        margin-top: 15px;
+    }
+}
