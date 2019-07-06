@@ -4,8 +4,13 @@ body {
     transition-duration: .4s;
 }
 
+.resp {
+    display: none;
+}
+
 .active {
-     border-bottom: 1px solid white;
+    border-bottom: 1px solid white;
+    background: transparent !important;
 }
 
 .active-custom {
@@ -13,8 +18,7 @@ body {
     background: red; */
 }
 
-.main-cont {
-}
+.main-cont {}
 
 .right-top {
     height: auto;
@@ -32,8 +36,8 @@ body {
     border-radius: 50%;
     margin: auto;
     overflow: hidden;
-
 }
+
 
 /* .notification {
 
@@ -70,7 +74,6 @@ body {
     min-height: 200px;
     overflow: hidden;
 }
-
 
 .content-cols {
     /* background-color: red; */
@@ -128,28 +131,28 @@ body {
     background: red !important;
 }
 
-
-
-
 @media only screen and (max-width: 768px) {
     .rms {
         font-size: 13px !important;
     }
 }
 
-
-
-
 @media only screen and (max-width: 575px) {
-
     #top-div {
         display: none;
     }
-
     #menu {
         display: none;
     }
-
+    .resp {
+        background: blue;
+        position: fixed;
+        z-index: 2;
+        display: block;
+    }
+    .main-cont {
+        padding-top: 80px;
+    }
     .lines-box {
         width: 60px;
         height: 50px;
@@ -158,26 +161,51 @@ body {
         /* cursor: pointer; */
         /* border: 1px solid white; */
     }
-    
     .lines-box:hover {
         cursor: pointer;
     }
-
     .line {
         margin: 0;
         height: 1px;
         background: white !important;
     }
-
     #line-one {
         margin-top: 4px;
     }
-
     #line-two {
         margin-top: 15px;
     }
-
     #line-three {
         margin-top: 15px;
+    }
+    .menu-show {
+        display: block !important;
+        position: fixed;
+        overflow: hidden;
+        z-index: 1;
+        background: blue;
+        width: 0%;
+        top: 65px !important;
+        animation-name: menu-show;
+        animation-duration: .5s;
+        animation-fill-mode: forwards;
+    }
+    @keyframes menu-show {
+        to {
+            width: 80%;
+        }
+    }
+    .menu-hide {
+        animation-name: menu-hide;
+        animation-duration: .5s;
+        animation-fill-mode: forwards;
+    }
+    @keyframes menu-hide {
+        from {
+            width: 80%;
+        }
+        to {
+            width: 0% !important;
+        }
     }
 }

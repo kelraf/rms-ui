@@ -16,8 +16,8 @@
 <body class="bg-primary" onload="dashboard();">
 
     <!-- Mobile Version Responsive -->
-    <div class="container-fluid pt-1 pb-1 bg-danger">
-        <div class="row bg-success pt-1 pb-1">
+    <div class="container-fluid pt-1 pb-1 bg-dange resp">
+        <div class="row bg-succes pt-1 pb-1">
 
             <!-- Logo -->
             <div class="col-3">
@@ -25,13 +25,20 @@
             </div>
 
             <!-- Image -->
-            <div class="col-3">
-                swdkjq
+            <div class="col-3 profile-image-col">
+                <a href="./user_profile.html" class="image-link">
+                    <div class="image-cont">
+                        <img class="img-fluid" src="../images/profile-image.jpg" alt="Profile Image">
+                    </div>
+                </a>
             </div>
 
             <!-- Notification -->
             <div class="col-3">
-                
+                <div class="notification pt-2 text-center">
+                    <i class="fa fa-bell fa-2x"></i>
+                    <p class="lead notification-content">2</p>
+                </div>
             </div>
             <div class="col-3">
                 <div class="lines-box" id="lines-box">
@@ -85,13 +92,13 @@
                 <div class="nav flex-column nav-pills btn-tabs-box" id="v-pills-tab" role="tablist" aria-orientation="vertical">
 
                     <a class="nav-link active p-0" id="v-pills-dashboard-tab" data-toggle="pill" href="#v-pills-dashboard" role="tab" aria-controls="v-pills-dashboard" aria-selected="true">
-                         
+
                         <div class="container-fluid pt-2 pb-1 active-custom" id="dashboard">
                             <div class="row">
-                                <div class="col-md-2 p-0 text-center">
+                                <div class="col-md-2 col-2 p-0 text-center">
                                     <i class="fa fa-dashboard pr-1 fa-2x"></i>
                                 </div>
-                                <div class="col-md-10 p-0">
+                                <div class="col-md-10 col-10 p-0">
                                     <span>Dashboard</span>
                                 </div>
                             </div>
@@ -99,15 +106,14 @@
 
                     </a>
 
-                    <a class="nav-link p-0" id="v-pills-apartments-tab" data-toggle="pill" href="#v-pills-apartments"
-                        role="tab" aria-controls="v-pills-apartments" aria-selected="false">
+                    <a class="nav-link p-0" id="v-pills-apartments-tab" data-toggle="pill" href="#v-pills-apartments" role="tab" aria-controls="v-pills-apartments" aria-selected="false">
 
                         <div class="container-fluid pt-2 pb-1" id="apartments">
                             <div class="row">
-                                <div class="col-md-2 p-0 text-center">
+                                <div class="col-md-2 col-2 p-0 text-center">
                                     <i class="fa fa-building pr-1 fa-2x"></i>
                                 </div>
-                                <div class="col-md-10 p-0">
+                                <div class="col-md-10 col-10 p-0">
                                     <span>Apartments</span>
                                 </div>
                             </div>
@@ -115,15 +121,14 @@
 
                     </a>
 
-                    <a class="nav-link p-0" id="v-pills-houses-tab" data-toggle="pill" href="#v-pills-houses" role="tab"
-                        aria-controls="v-pills-houses" aria-selected="false">
+                    <a class="nav-link p-0" id="v-pills-houses-tab" data-toggle="pill" href="#v-pills-houses" role="tab" aria-controls="v-pills-houses" aria-selected="false">
 
                         <div class="container-fluid pt-2 pb-1" id="houses">
                             <div class="row">
-                                <div class="col-md-2 p-0 text-center">
+                                <div class="col-md-2 col-2 p-0 text-center">
                                     <i class="fa fa-home pr-1 fa-2x"></i>
                                 </div>
-                                <div class="col-md-10 p-0">
+                                <div class="col-md-10 col-10 p-0">
                                     <span>Houses</span>
                                 </div>
                             </div>
@@ -131,15 +136,14 @@
 
                     </a>
 
-                    <a class="nav-link p-0" id="v-pills-tenants-tab" data-toggle="pill" href="#v-pills-tenants"
-                        role="tab" aria-controls="v-pills-tenants" aria-selected="false">
-                        
+                    <a class="nav-link p-0" id="v-pills-tenants-tab" data-toggle="pill" href="#v-pills-tenants" role="tab" aria-controls="v-pills-tenants" aria-selected="false">
+
                         <div class="container-fluid pt-2 pb-1" id="tenants">
                             <div class="row">
-                                <div class="col-md-2 p-0 text-center">
+                                <div class="col-md-2 col-2 p-0 text-center">
                                     <i class="fa fa-users pr-1 fa-2x"></i>
                                 </div>
-                                <div class="col-md-10 p-0">
+                                <div class="col-md-10 col-10 p-0">
                                     <span>Tenants</spa>
                                 </div>
                             </div>
@@ -153,10 +157,10 @@
                         
                         <div class="container-fluid pt-2 pb-1" id="payment">
                             <div class="row">
-                                <div class="col-md-2 p-0 text-center">
+                                <div class="col-md-2 col-2 p-0 text-center">
                                     <i class="fa fa-money fa-2x pr-1"></i>
                                 </div>
-                                <div class="col-md-10 p-0">
+                                <div class="col-md-10 col-10 p-0">
                                     <span>Payment</span>
                                 </div>
                             </div>
@@ -167,29 +171,27 @@
                         <i class="fa fa-money fa-2x pr-1"> </i><span>Outstanding Payments</spa>
                     </a> -->
 
-                    <a class="nav-link p-0" id="v-pills-outs-payments-tab" href="./user_profile.html" role="tab"
-                        aria-controls="v-pills-outs-payments">
-                        
+                    <a class="nav-link p-0" id="v-pills-outs-payments-tab" href="./user_profile.html" role="tab" aria-controls="v-pills-outs-payments">
+
                         <div class="container-fluid pt-2 pb-1">
                             <div class="row">
-                                <div class="col-md-2 p-0 text-center">
+                                <div class="col-md-2 col-2 p-0 text-center">
                                     <i class="fa fa-user fa-2x pr-1"></i>
                                 </div>
-                                <div class="col-md-10 p-0">
+                                <div class="col-md-10 col-10 p-0">
                                     <span>My Profile</span>
                                 </div>
                             </div>
                         </div>
                     </a>
-                    <a class="nav-link p-0" id="v-pills-outs-payments-tab" href="../" role="tab"
-                        aria-controls="v-pills-outs-payments" aria-selected="false">
-                        
-                        <div class="container-fluid pt-2 pb-1">
+                    <a class="nav-link p-0" id="v-pills-outs-payments-tab" href="../" role="tab" aria-controls="v-pills-outs-payments" aria-selected="false">
+
+                        <div class="container-fluid pt-2 pb-3">
                             <div class="row">
-                                <div class="col-md-2 p-0 text-center">
+                                <div class="col-md-2 col-2 p-0 text-center">
                                     <i class="fa fa-sign-out pr-1 fa-2x"> </i>
                                 </div>
-                                <div class="col-md-10 p-0">
+                                <div class="col-md-10 col-10 p-0">
                                     <span>Logout</span>
                                 </div>
                             </div>
@@ -205,7 +207,7 @@
 
                     <div class="tab-pane fade show active p-0 tab-content-custom bg-primary p-1" id="v-pills-dashboard" role="tabpanel" aria-labelledby="v-pills-dashboard-tab">
 
-                            <p class="lead">At A Glance</p>
+                        <p class="lead">At A Glance</p>
                         <div class="container-fluid">
 
                             <!-- Apartments houses occupied Total -->
@@ -249,19 +251,19 @@
                             <!-- Unoccupied Payments and Not Payed Total -->
                             <div class="row">
 
-                               <!-- Not Occupied -->
+                                <!-- Not Occupied -->
                                 <div class="col-md-4 content-cols p-0">
-                                     <a href="./houses.html" class="content-hold p-1">
-                                         <div class="icon">
-                                             <i class="fa fa-home pt-1 pb-1 fa-5x"></i>
-                                             <i class="fa fa-users text-danger pt-1 pb-1 fa-4x with-pple"></i>
-                                         </div>
-                                         <div class="name">Unoccupied Houses</div>
-                                         <div class="number">30</div>
-                                     </a>
+                                    <a href="./houses.html" class="content-hold p-1">
+                                        <div class="icon">
+                                            <i class="fa fa-home pt-1 pb-1 fa-5x"></i>
+                                            <i class="fa fa-users text-danger pt-1 pb-1 fa-4x with-pple"></i>
+                                        </div>
+                                        <div class="name">Unoccupied Houses</div>
+                                        <div class="number">30</div>
+                                    </a>
                                 </div>
 
-                                 <!-- Payed -->
+                                <!-- Payed -->
                                 <div class="col-md-4 content-cols p-0">
                                     <a href="#" class="content-hold p-1">
                                         <div class="icon">
@@ -298,35 +300,35 @@
                                         </div>
                                     </div>
 
-                                     <!-- Chart -->
-                                     <div class="row">
-                                         <div class="col-12">
-                                             <div class="chart-box pt-2 pb-2">
-                                                 <canvas id="chart-one"></canvas>
-                                             </div>
-                                         </div>
-                                     </div>
+                                    <!-- Chart -->
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="chart-box pt-2 pb-2">
+                                                <canvas id="chart-one"></canvas>
+                                            </div>
+                                        </div>
+                                    </div>
 
                                 </div>
 
                                 <!-- Payment Vs Not Payed Chart -->
                                 <div class="col-md-6">
 
-                                     <!-- Chart Header -->
-                                     <div class="row">
-                                         <div class="col-12 p-0">
-                                             <p class="lead">Payed Vs Not Payed</p>
-                                         </div>
-                                     </div>
+                                    <!-- Chart Header -->
+                                    <div class="row">
+                                        <div class="col-12 p-0">
+                                            <p class="lead">Payed Vs Not Payed</p>
+                                        </div>
+                                    </div>
 
-                                     <!-- Chart -->
-                                     <div class="row">
-                                         <div class="col-12">
-                                             <div class="chart-box pt-2 pb-2">
-                                                 <canvas id="chart-two"></canvas>
-                                             </div>
-                                         </div>
-                                     </div>
+                                    <!-- Chart -->
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="chart-box pt-2 pb-2">
+                                                <canvas id="chart-two"></canvas>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
 
@@ -335,8 +337,7 @@
 
                     </div>
 
-                    <div class="tab-pane fade tab-content-custom bg-primary p-1" id="v-pills-apartments" role="tabpanel"
-                        aria-labelledby="v-pills-apartments-tab">
+                    <div class="tab-pane fade tab-content-custom bg-primary p-1" id="v-pills-apartments" role="tabpanel" aria-labelledby="v-pills-apartments-tab">
 
                         <div class="container-fluid">
 
@@ -360,7 +361,7 @@
                                 <div class="col-md-3 pt-1 pb-1">
                                     <a href="./apartment_form.html" class="btn btn-custom">Add Apartment</a>
                                 </div>
-                                
+
                             </div>
 
                             <!-- Items -->
@@ -415,9 +416,9 @@
 
 
                     </div>
-                    
+
                     <div class="tab-pane fade tab-content-custom bg-primary p-1" id="v-pills-houses" role="tabpanel" aria-labelledby="v-pills-houses-tab">
-            
+
                         <div class="container-fluid">
 
                             <!-- Header -->
@@ -447,14 +448,14 @@
                             <div class="row">
 
                                 <div class="col-md-3 p-0 content-cols">
-                                     <a href="./houses.html" class="content-hold p-1">
-                                         <div class="icon">
-                                             <i class="fa fa-home pt-1 pb-1 fa-4x"></i>
-                                             <i class="fa fa-users pt-1 pb-1 fa-5x with-pple"></i>
-                                         </div>
-                                         <div class="name">Occupied Houses</div>
-                                         <div class="number">30</div>
-                                     </a>
+                                    <a href="./houses.html" class="content-hold p-1">
+                                        <div class="icon">
+                                            <i class="fa fa-home pt-1 pb-1 fa-4x"></i>
+                                            <i class="fa fa-users pt-1 pb-1 fa-5x with-pple"></i>
+                                        </div>
+                                        <div class="name">Occupied Houses</div>
+                                        <div class="number">30</div>
+                                    </a>
                                 </div>
 
                                 <div class="col-md-3 p-0 content-cols">
@@ -479,14 +480,14 @@
                                 </div>
 
                                 <div class="col-md-3 p-0 content-cols">
-                                     <a href="#" class="content-hold p-1">
-                                         <div class="icon">
-                                             <i class="fa fa-money pt-1 pb-1 fa-4x"></i>
-                                             <i class="fa fa-times text-danger pt-1 pb-1 fa-5x with-pple"></i>
-                                         </div>
-                                         <div class="name">Not Payed</div>
-                                         <div class="number">Kshs 100000</div>
-                                     </a>
+                                    <a href="#" class="content-hold p-1">
+                                        <div class="icon">
+                                            <i class="fa fa-money pt-1 pb-1 fa-4x"></i>
+                                            <i class="fa fa-times text-danger pt-1 pb-1 fa-5x with-pple"></i>
+                                        </div>
+                                        <div class="name">Not Payed</div>
+                                        <div class="number">Kshs 100000</div>
+                                    </a>
                                 </div>
 
                             </div>
@@ -563,7 +564,7 @@
                                 <div class="col-md-3">
                                     <a href="./register.html" class="btn btn-custom ">Add Tenant</a>
                                 </div>
-                            
+
                             </div>
 
                             <!-- Items -->
@@ -628,7 +629,7 @@
                                     </div>
 
                                     <!-- Chart -->
-                                   <div class="row">
+                                    <div class="row">
                                         <div class="col-12">
                                             <div class="chart-box pt-2 pb-2">
                                                 <canvas id="chart-five"></canvas>
@@ -648,7 +649,7 @@
                                     </div>
 
                                     <!-- Chart -->
-                                   <div class="row">
+                                    <div class="row">
                                         <div class="col-12">
                                             <div class="chart-box pt-2 pb-2">
                                                 <canvas id="chart-six"></canvas>
@@ -759,8 +760,8 @@
 
 
 
-    <!-- <script src="../js/custom/custom-libraries/jquery.js"></script>     -->
-    <!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script> -->
+    <script src="../js/custom/jquery/jquery-3.3.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
     <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
     <!-- <script src="../js/custom/custom-libraries/popper.js"></script> -->
@@ -768,6 +769,7 @@
 
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/custom/dashboard.js"></script>
-    
+
 </body>
+
 </html>
