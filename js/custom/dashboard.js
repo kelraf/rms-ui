@@ -1,6 +1,8 @@
+// import Data  from "./module.js"
+
 // When The Document Loads
 function dashboard() {
-
+    
     function headermenu() {
         let header = document.getElementById("header");
         let menu = document.getElementById("menu");
