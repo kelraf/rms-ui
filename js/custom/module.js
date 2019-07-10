@@ -1,7 +1,8 @@
 const Data = {
-    "name" : "rafael",
-    "age" : 19,
+    "firstName" : "Rafael",
+    "lastName" : "Kingara",
     "gender" : "male"
 }
+
 
 export default Data;

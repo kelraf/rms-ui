@@ -1,9 +1,9 @@
-// import Data  from "./module.js"
+// import { Data }  from "./module.js";
 
-// When The Document Loads
+
 function dashboard() {
     
-    function headermenu() {
+    (function headermenu() {
         let header = document.getElementById("header");
         let menu = document.getElementById("menu");
 
@@ -12,17 +12,7 @@ function dashboard() {
         menu.style.top = `-${header_height}px`;
 
         console.log(`-${header_height}px`);
-    }
-
-    headermenu()
-
-    $(document).ready(function() {
-        // if ($("men")) {
-        //     alert("Success")
-        // } else {
-        //     alert("Error")
-        // }
-    });
+    }())
 
     let chartData = {
         chartLabel: null,
